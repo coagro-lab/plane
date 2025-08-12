@@ -128,7 +128,7 @@ export const ProjectSettingsMemberDefaults: React.FC<TProjectSettingsMemberDefau
 
   return (
     <div className="flex flex-col gap-y-6 my-6">
-      <DefaultSettingItem title="Project Lead" description="Select the project lead for the project.">
+      <DefaultSettingItem title="Project Lead" description="Selecione o líder do projeto.">
         {currentProjectDetails ? (
           <Controller
             control={control}
@@ -149,7 +149,7 @@ export const ProjectSettingsMemberDefaults: React.FC<TProjectSettingsMemberDefau
           </Loader>
         )}
       </DefaultSettingItem>
-      <DefaultSettingItem title="Default Assignee" description="Select the default assignee for the project.">
+      <DefaultSettingItem title="Default Assignee" description="Selecione o responsável padrão para o projeto.">
         {currentProjectDetails ? (
           <Controller
             control={control}
@@ -172,8 +172,8 @@ export const ProjectSettingsMemberDefaults: React.FC<TProjectSettingsMemberDefau
       </DefaultSettingItem>
       {currentProjectDetails && (
         <DefaultSettingItem
-          title="Guest access"
-          description="This will allow guests to have view access to all the project work items."
+          title="Acesso de convidado"
+          description="Isso permitirá que os convidados tenham acesso de visualização a todos os itens de trabalho do projeto."
         >
           <div className="flex items-center justify-end">
             <ToggleSwitch

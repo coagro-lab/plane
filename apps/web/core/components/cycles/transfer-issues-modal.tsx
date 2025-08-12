@@ -114,7 +114,7 @@ export const TransferIssuesModal: React.FC<Props> = observer((props) => {
                   <div className="flex items-center justify-between px-5">
                     <div className="flex items-center gap-1">
                       <TransferIcon className="w-5 fill-custom-text-100" />
-                      <h4 className="text-xl font-medium text-custom-text-100">Transfer work items</h4>
+                      <h4 className="text-xl font-medium text-custom-text-100">Transferir itens de trabalho</h4>
                     </div>
                     <button onClick={handleClose}>
                       <X className="h-4 w-4" />
@@ -124,7 +124,7 @@ export const TransferIssuesModal: React.FC<Props> = observer((props) => {
                     <Search className="h-4 w-4 text-custom-text-200" />
                     <input
                       className="outline-none text-sm"
-                      placeholder="Search for a cycle..."
+                      placeholder="Pesquisar por um ciclo..."
                       onChange={(e) => setQuery(e.target.value)}
                       value={query}
                     />
@@ -164,12 +164,12 @@ export const TransferIssuesModal: React.FC<Props> = observer((props) => {
                         <div className="flex w-full items-center justify-center gap-4 p-5 text-sm">
                           <AlertCircle className="h-3.5 w-3.5 text-custom-text-200" />
                           <span className="text-center text-custom-text-200">
-                            You don’t have any current cycle. Please create one to transfer the work items.
+                            Você não tem nenhum ciclo atual. Por favor, crie um para transferir os itens de trabalho.
                           </span>
                         </div>
                       )
                     ) : (
-                      <p className="text-center text-custom-text-200">Loading...</p>
+                      <p className="text-center text-custom-text-200">Carregando...</p>
                     )}
                   </div>
                 </div>

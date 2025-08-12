@@ -1639,8 +1639,8 @@
       }
     },
     "states": {
-      "heading": "States",
-      "description": "Define and customize workflow states to track the progress of your work items.",
+      "heading": "Estados",
+      "description": "Define e personaliza os estados de fluxo de trabalho para rastrear o progresso dos seus itens de trabalho.",
       "describe_this_state_for_your_members": "Descreva este estado para seus membros.",
       "empty_state": {
         "title": "Nenhum estado disponível para o grupo {groupKey}",
@@ -1648,8 +1648,8 @@
       }
     },
     "labels": {
-      "heading": "Labels",
-      "description": "Create custom labels to categorize and organize your work items",
+      "heading": "Etiquetas",
+      "description": "Crie etiquetas personalizadas para categorizar e organizar seus itens de trabalho",
       "label_title": "Título da etiqueta",
       "label_title_is_required": "O título da etiqueta é obrigatório",
       "label_max_char": "O nome da etiqueta não deve exceder 255 caracteres",
@@ -1658,11 +1658,11 @@
       }
     },
     "estimates": {
-      "heading": "Estimates",
+      "heading": "Estimativas",
       "description": "Elas ajudam você a comunicar a complexidade e a carga de trabalho da equipe.",
       "label": "Estimativas",
       "title": "Habilitar estimativas para meu projeto",
-      "enable_description": "They help you in communicating complexity and workload of the team.",
+      "enable_description": "Elas ajudam você a comunicar a complexidade e a carga de trabalho da equipe.",
       "no_estimate": "Sem estimativa",
       "new": "Novo sistema de estimativa",
       "create": {
@@ -1744,8 +1744,8 @@
     },
     "automations": {
       "label": "Automações",
-      "heading": "Automations",
-      "description": "Configure automated actions to streamline your project management workflow and reduce manual tasks.",
+      "heading": "Automações",
+      "description": "Configure ações automatizadas para otimizar o fluxo de trabalho de gerenciamento de projetos e reduzir tarefas manuais.",
       "auto-archive": {
         "title": "Arquivar automaticamente itens de trabalho fechados",
         "description": "O Plane arquivará automaticamente os itens de trabalho que foram concluídos ou cancelados.",
@@ -1770,6 +1770,8 @@
       }
     }
   },
+
+  
   "project_cycles": {
     "add_cycle": "Adicionar ciclo",
     "more_details": "Mais detalhes",
@@ -1780,12 +1782,12 @@
     "remove_filters_to_see_all_cycles": "Remova os filtros para ver todos os ciclos",
     "remove_search_criteria_to_see_all_cycles": "Remova os critérios de pesquisa para ver todos os ciclos",
     "only_completed_cycles_can_be_archived": "Apenas ciclos concluídos podem ser arquivados",
-    "start_date": "Start date",
-    "end_date": "End date",
-    "in_your_timezone": "In your timezone",
-    "transfer_work_items": "Transfer {count} work items",
-    "date_range": "Date range",
-    "add_date": "Add date",
+    "start_date": "Data de início",
+    "end_date": "Data de término",
+    "in_your_timezone": "Em seu fuso horário",
+    "transfer_work_items": "Transferir {count} itens de trabalho",
+    "date_range": "Intervalo de datas",
+    "add_date": "Adicionar data",
     "active_cycle": {
       "label": "Ciclo ativo",
       "progress": "Progresso",

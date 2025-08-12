@@ -82,9 +82,8 @@ export const DeleteProjectViewModal: React.FC<Props> = observer((props) => {
       title="Delete view"
       content={
         <>
-          Are you sure you want to delete view-{" "}
-          <span className="break-all font-medium text-custom-text-100">{data?.name}</span>? All of the data related to
-          the view will be permanently removed. This action cannot be undone.
+          Tem certeza que deseja excluir a visualização-{" "}
+          <span className="break-all font-medium text-custom-text-100">{data?.name}</span>? Todos os dados relacionados à visualização serão removidos permanentemente. Esta ação não pode ser desfeita.
         </>
       }
     />

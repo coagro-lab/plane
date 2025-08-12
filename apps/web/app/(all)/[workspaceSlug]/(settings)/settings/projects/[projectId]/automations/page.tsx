@@ -34,14 +34,14 @@ const AutomationSettingsPage = observer(() => {
     await updateProject(workspaceSlug.toString(), projectId.toString(), formData).catch(() => {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "Something went wrong. Please try again.",
+        title: "Erro!",
+        message: "Algo deu errado. Por favor, tente novamente.",
       });
     });
   };
 
   // derived values
-  const pageTitle = projectDetails?.name ? `${projectDetails?.name} - Automations` : undefined;
+  const pageTitle = projectDetails?.name ? `${projectDetails?.name} - Automações` : undefined;
 
   if (workspaceUserInfo && !canPerformProjectAdminActions) {
     return <NotAuthorizedView section="settings" isProjectView className="h-auto" />;

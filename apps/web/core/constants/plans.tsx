@@ -56,7 +56,7 @@ export const ComingSoonBadge = ({ className }: { className?: string }) => (
       className
     )}
   >
-    COMING SOON
+    EM BREVE
   </span>
 );
 
@@ -1294,11 +1294,11 @@ export const PLANE_PLANS: PlanePlans = {
     },
   },
   planHighlights: {
-    free: ["Upto 12 users", "Pages", "Unlimited projects", "Unlimited cycles and modules"],
-    one: ["Upto 50 users", "OIDC and SAML", "Active cycles", "Limited time tracking"],
-    pro: ["Unlimited users", "Custom work items + Properties", "Work item templates", "Full Time Tracking"],
-    business: ["RBAC", "Project Templates", "Baselines And Deviations", "Custom Reports"],
-    enterprise: ["Private + managed deployments", "GAC", "LDAP support", "Databases + Formulas"],
+    free: ["Até 12 usuários", "Páginas", "Projetos ilimitados", "Ciclos e módulos ilimitados"],
+    one: ["Até 50 usuários", "OIDC e SAML", "Ciclos ativos", "Tempo limitado de rastreamento"],
+    pro: ["Usuários ilimitados", "Itens de trabalho personalizados + Propriedades", "Modelos de itens de trabalho", "Rastreamento de tempo completo"],
+    business: ["RBAC", "Modelos de projeto", "Linhas de base e desvios", "Relatórios personalizados"],
+    enterprise: ["Implantações privadas + gerenciadas", "GAC", "Suporte LDAP", "Bancos de dados + fórmulas"],
   },
   planComparison: PLANS_COMPARISON_LIST,
 };

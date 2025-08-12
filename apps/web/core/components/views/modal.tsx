@@ -55,8 +55,8 @@ export const CreateUpdateProjectViewModal: FC<Props> = observer((props) => {
       .catch(() => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Something went wrong. Please try again.",
+          title: "Erro!",
+          message: "Algo deu errado. Por favor, tente novamente.",
         });
         captureError({
           eventName: PROJECT_VIEW_TRACKER_EVENTS.create,
@@ -78,8 +78,8 @@ export const CreateUpdateProjectViewModal: FC<Props> = observer((props) => {
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: err?.detail ?? "Something went wrong. Please try again.",
+          title: "Erro!",
+          message: err?.detail ?? "Algo deu errado. Por favor, tente novamente.",
         });
         captureError({
           eventName: PROJECT_VIEW_TRACKER_EVENTS.update,
