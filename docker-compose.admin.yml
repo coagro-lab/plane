@@ -138,8 +138,6 @@ services:
       <<: [*plane, *app-env, *pg-env, *redis-env, *rabbitmq-env, *docstore-env]
     networks:
       - dokploy-network
-    depends_on:
-      - api
 
 
 

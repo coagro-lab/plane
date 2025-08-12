@@ -125,19 +125,6 @@ x-live-env: &live-env
 
 services:
  
-  admin:
-    container_name: admin
-    build:
-      context: .
-      dockerfile: ./apps/admin/Dockerfile.admin
-      args:
-        DOCKER_BUILDKIT: 1
-    restart: always
-    networks:
-      - dokploy-network
-    depends_on:
-      - api
-
   space:
     container_name: space
     build:
