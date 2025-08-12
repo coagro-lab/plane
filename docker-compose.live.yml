@@ -12,12 +12,12 @@ x-monitor-env: &monitor-env
   SERVICE_HTTP_PROXY: proxy:80
   SERVICE_HTTP_MINIO: plane-minio:9090
   SERVICE_TCP_REDIS: plane-redis:6379
-  SERVICE_TCP_POSTGRES: plane-db:5432
+  SERVICE_TCP_POSTGRES: supabase-db:5432
   TRUSTED_PROXIES: ${TRUSTED_PROXIES:-0.0.0.0/0}
 
 x-proxy-env: &proxy-env
   SITE_ADDRESS: ${SITE_ADDRESS:-localhost:80}
-  CERT_EMAIL: ${CERT_EMAIL:-admin@example.com}
+  CERT_EMAIL: ${CERT_EMAIL:-admin@nwerp.ai}
   CERT_ACME_CA: ${CERT_ACME_CA}
   CERT_ACME_DNS: ${CERT_ACME_DNS}
   BUCKET_NAME: ${BUCKET_NAME:-uploads}
@@ -36,6 +36,7 @@ x-pg-env: &pg-env
 x-rabbitmq-env: &rabbitmq-env
   RABBITMQ_HOST: ${RABBITMQ_HOST:-plane-mq}
   RABBITMQ_PORT: ${RABBITMQ_PORT:-5672}
+  RABBITMQ_HTTP_PORT: ${RABBITMQ_HTTP_PORT:-15672}
   RABBITMQ_DEFAULT_USER: ${RABBITMQ_USER:-plane}
   RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:-plane}
   RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST:-plane}

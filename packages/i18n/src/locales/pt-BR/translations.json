@@ -16,7 +16,7 @@
     "drafts": "Rascunhos",
     "favorites": "Favoritos",
     "pro": "Pro",
-    "upgrade": "Upgrade"
+    "upgrade": "Atualizar"
   },
   "auth": {
     "common": {
@@ -464,7 +464,7 @@
   "make_a_copy": "Fazer uma cópia",
   "move_to_project": "Mover para o projeto",
   "good": "Bom",
-  "morning": "manhã",
+  "morning": "dia",
   "afternoon": "tarde",
   "evening": "noite",
   "show_all": "Mostrar tudo",
