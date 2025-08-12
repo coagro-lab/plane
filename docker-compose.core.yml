@@ -270,20 +270,20 @@ services:
     volumes:
       - redisdata:/data
 
-  # plane-mq:
-  #   container_name: plane-mq
-  #   image: rabbitmq:3.13.6-management-alpine
-  #   restart: always
-  #   networks:
-  #     - dokploy-network
-  #   environment:
-  #     <<: *rabbitmq-env
-  #   deploy:
-  #     replicas: 1
-  #     restart_policy:
-  #       condition: on-failure
-  #   volumes:
-  #     - rabbitmq_data:/var/lib/rabbitmq    
+  plane-mq:
+    container_name: plane-mq
+    image: rabbitmq:3.13.6-management-alpine
+    restart: always
+    networks:
+      - dokploy-network
+    environment:
+      <<: *rabbitmq-env
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq    
 
   plane-minio:
     container_name: plane-minio
