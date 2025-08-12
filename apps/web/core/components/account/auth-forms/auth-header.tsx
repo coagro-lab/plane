@@ -22,30 +22,30 @@ type TAuthHeader = {
 const Titles = {
   [EAuthModes.SIGN_IN]: {
     [EAuthSteps.EMAIL]: {
-      header: "Work in all dimensions.",
-      subHeader: "Welcome back to Plane.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Bem-vindo de volta ao Plane.",
     },
     [EAuthSteps.PASSWORD]: {
-      header: "Work in all dimensions.",
-      subHeader: "Welcome back to Plane.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Bem-vindo de volta ao Plane.",
     },
     [EAuthSteps.UNIQUE_CODE]: {
-      header: "Work in all dimensions.",
-      subHeader: "Welcome back to Plane.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Bem-vindo de volta ao Plane.",
     },
   },
   [EAuthModes.SIGN_UP]: {
     [EAuthSteps.EMAIL]: {
-      header: "Work in all dimensions.",
-      subHeader: "Create your Plane account.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Crie sua conta no Plane.",
     },
     [EAuthSteps.PASSWORD]: {
-      header: "Work in all dimensions.",
-      subHeader: "Create your Plane account.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Crie sua conta no Plane.",
     },
     [EAuthSteps.UNIQUE_CODE]: {
-      header: "Work in all dimensions.",
-      subHeader: "Create your Plane account.",
+      header: "Trabalhe em todas as dimensões.",
+      subHeader: "Crie sua conta no Plane.",
     },
   },
 };
@@ -84,8 +84,8 @@ export const AuthHeader: FC<TAuthHeader> = observer((props) => {
         ),
         subHeader:
           mode == EAuthModes.SIGN_UP
-            ? "Create an account to start managing work with your team."
-            : "Log in to start managing work with your team.",
+            ? "Crie uma conta para começar a gerenciar seu trabalho com sua equipe."
+            : "Faça login para começar a gerenciar seu trabalho com sua equipe.",
       };
     }
 

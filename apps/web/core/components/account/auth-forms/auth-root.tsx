@@ -109,7 +109,7 @@ export const AuthRoot: FC<TAuthRoot> = observer((props) => {
   const OAuthConfig = [
     {
       id: "google",
-      text: `${OauthButtonContent} with Google`,
+      text: `${OauthButtonContent} com Google`,
       icon: <Image src={GoogleLogo} height={18} width={18} alt="Google Logo" />,
       onClick: () => {
         window.location.assign(`${API_BASE_URL}/auth/google/${next_path ? `?next_path=${next_path}` : ``}`);
@@ -118,7 +118,7 @@ export const AuthRoot: FC<TAuthRoot> = observer((props) => {
     },
     {
       id: "github",
-      text: `${OauthButtonContent} with GitHub`,
+      text: `${OauthButtonContent} com GitHub`,
       icon: (
         <Image
           src={resolvedTheme === "dark" ? GithubLightLogo : GithubDarkLogo}
@@ -134,7 +134,7 @@ export const AuthRoot: FC<TAuthRoot> = observer((props) => {
     },
     {
       id: "gitlab",
-      text: `${OauthButtonContent} with GitLab`,
+      text: `${OauthButtonContent} com GitLab`,
       icon: <Image src={GitlabLogo} height={18} width={18} alt="GitLab Logo" />,
       onClick: () => {
         window.location.assign(`${API_BASE_URL}/auth/gitlab/${next_path ? `?next_path=${next_path}` : ``}`);

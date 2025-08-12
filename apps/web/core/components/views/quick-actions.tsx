@@ -47,8 +47,8 @@ export const ViewQuickActions: React.FC<Props> = observer((props) => {
     copyUrlToClipboard(viewLink).then(() => {
       setToast({
         type: TOAST_TYPE.SUCCESS,
-        title: "Link Copied!",
-        message: "View link copied to clipboard.",
+        title: "Link copiado!",
+        message: "Link da visualização copiado para a área de transferência.",
       });
     });
   const handleOpenInNewTab = () => window.open(`/${viewLink}`, "_blank");
@@ -57,26 +57,26 @@ export const ViewQuickActions: React.FC<Props> = observer((props) => {
     {
       key: "edit",
       action: () => setCreateUpdateViewModal(true),
-      title: "Edit",
+      title: "Editar",
       icon: Pencil,
       shouldRender: isOwner,
     },
     {
       key: "open-new-tab",
       action: handleOpenInNewTab,
-      title: "Open in new tab",
+      title: "Abrir em nova aba",
       icon: ExternalLink,
     },
     {
       key: "copy-link",
       action: handleCopyText,
-      title: "Copy link",
+      title: "Copiar link",
       icon: Link,
     },
     {
       key: "delete",
       action: () => setDeleteViewModal(true),
-      title: "Delete",
+      title: "Excluir",
       icon: Trash2,
       shouldRender: isOwner || isAdmin,
     },

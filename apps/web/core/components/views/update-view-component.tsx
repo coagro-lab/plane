@@ -36,7 +36,7 @@ export const UpdateViewComponent = (props: Props) => {
   // Change state while updating view to have a feedback
   const updateButton = isUpdating ? (
     <Button variant="primary" size="sm" className="flex-shrink-0">
-      Updating...
+      Atualizando...
     </Button>
   ) : (
     <Button
@@ -48,7 +48,7 @@ export const UpdateViewComponent = (props: Props) => {
         handleUpdateView();
       }}
     >
-      Update view
+      Atualizar visualização
     </Button>
   );
 
@@ -67,7 +67,7 @@ export const UpdateViewComponent = (props: Props) => {
               data-ph-element={trackerElement}
               onClick={() => setIsModalOpen(true)}
             >
-              Save as
+              Salvar como
             </Button>
             {isOwner && <>{updateButton}</>}
           </>

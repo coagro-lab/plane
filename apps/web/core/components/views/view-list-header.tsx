@@ -71,7 +71,7 @@ export const ViewListHeader = observer(() => {
           <input
             ref={inputRef}
             className="w-full max-w-[234px] border-none bg-transparent text-sm text-custom-text-100 placeholder:text-custom-text-400 focus:outline-none"
-            placeholder="Search"
+            placeholder="Pesquisar"
             value={filters?.searchQuery}
             onChange={(e) => updateFilters("searchQuery", e.target.value)}
             onKeyDown={handleInputKeyDown}

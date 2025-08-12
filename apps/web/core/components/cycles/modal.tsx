@@ -60,8 +60,8 @@ export const CycleCreateUpdateModal: React.FC<CycleModalProps> = (props) => {
 
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Cycle created successfully.",
+          title: "Sucesso!",
+          message: "Ciclo criado com sucesso.",
         });
         captureSuccess({
           eventName: CYCLE_TRACKER_EVENTS.create,
@@ -73,8 +73,8 @@ export const CycleCreateUpdateModal: React.FC<CycleModalProps> = (props) => {
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: err?.detail ?? "Error in creating cycle. Please try again.",
+          title: "Erro!",
+          message: err?.detail ?? "Erro ao criar ciclo. Por favor, tente novamente.",
         });
         captureError({
           eventName: CYCLE_TRACKER_EVENTS.create,
@@ -97,15 +97,15 @@ export const CycleCreateUpdateModal: React.FC<CycleModalProps> = (props) => {
         });
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: "Cycle updated successfully.",
+          title: "Sucesso!",
+          message: "Ciclo atualizado com sucesso.",
         });
       })
       .catch((err) => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: err?.detail ?? "Error in updating cycle. Please try again.",
+          title: "Erro!",
+          message: err?.detail ?? "Erro ao atualizar ciclo. Por favor, tente novamente.",
         });
         captureError({
           eventName: CYCLE_TRACKER_EVENTS.update,
@@ -158,8 +158,8 @@ export const CycleCreateUpdateModal: React.FC<CycleModalProps> = (props) => {
     } else
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "You already have a cycle on the given dates, if you want to create a draft cycle, remove the dates.",
+        title: "Erro!",
+        message: "Você já tem um ciclo nas datas fornecidas, se você quiser criar um ciclo em rascunho, remova as datas.",
       });
   };
 

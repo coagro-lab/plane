@@ -28,10 +28,10 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
       >
         <div className="flex items-center gap-2 text-custom-text-200">
           <Rocket className="h-3.5 w-3.5" />
-          Open keyboard shortcuts
+          Abrir atalhos de teclado
         </div>
       </Command.Item>
-      <Command.Item
+      {/* <Command.Item
         onSelect={() => {
           closePalette();
           window.open("https://docs.plane.so/", "_blank");
@@ -42,8 +42,10 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
           <FileText className="h-3.5 w-3.5" />
           Open Plane documentation
         </div>
-      </Command.Item>
-      <Command.Item
+      </Command.Item> */}
+
+
+      {/* <Command.Item
         onSelect={() => {
           closePalette();
           window.open("https://discord.com/invite/A92xrEGCge", "_blank");
@@ -54,8 +56,9 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
           <DiscordIcon className="h-4 w-4" color="rgb(var(--color-text-200))" />
           Join our Discord
         </div>
-      </Command.Item>
-      <Command.Item
+      </Command.Item> */}
+      
+      {/* <Command.Item
         onSelect={() => {
           closePalette();
           window.open("https://github.com/makeplane/plane/issues/new/choose", "_blank");
@@ -66,8 +69,9 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
           <GithubIcon className="h-4 w-4" color="rgb(var(--color-text-200))" />
           Report a bug
         </div>
-      </Command.Item>
-      <Command.Item
+      </Command.Item> */}
+
+      {/* <Command.Item
         onSelect={() => {
           closePalette();
           toggleIntercom(true);
@@ -78,7 +82,7 @@ export const CommandPaletteHelpActions: React.FC<Props> = observer((props) => {
           <MessageSquare className="h-3.5 w-3.5" />
           Chat with us
         </div>
-      </Command.Item>
+      </Command.Item> */}
     </Command.Group>
   );
 });

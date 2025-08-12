@@ -244,7 +244,7 @@ export const CommandModal: React.FC = observer(() => {
                       if (e.key === "Escape" || (e.key === "Backspace" && !searchTerm)) {
                         e.preventDefault();
                         setPages((pages) => pages.slice(0, -1));
-                        setPlaceholder("Type a command or search...");
+                        setPlaceholder("Digite um comando ou pesquise...");
                       }
                     }}
                   >
@@ -257,7 +257,7 @@ export const CommandModal: React.FC = observer(() => {
                         />
                         {searchInIssue && issueDetails && (
                           <>
-                            <span className="flex items-center text-sm">Update in:</span>
+                            <span className="flex items-center text-sm">Atualizar em:</span>
                             <span className="flex items-center gap-1 rounded px-1.5 py-1 text-sm bg-custom-primary-100/10 ">
                               {issueDetails.project_id && (
                                 <IssueIdentifier
@@ -293,13 +293,13 @@ export const CommandModal: React.FC = observer(() => {
                     <Command.List className="vertical-scrollbar scrollbar-sm max-h-96 overflow-scroll p-2">
                       {searchTerm !== "" && (
                         <h5 className="mx-[3px] my-4 text-xs text-custom-text-100">
-                          Search results for{" "}
+                          Resultados da pesquisa para{" "}
                           <span className="font-medium">
                             {'"'}
                             {searchTerm}
                             {'"'}
                           </span>{" "}
-                          in {!projectId || isWorkspaceLevel ? "workspace" : "project"}:
+                          em {!projectId || isWorkspaceLevel ? "workspace" : "projeto"}:
                         </h5>
                       )}
 
@@ -354,7 +354,7 @@ export const CommandModal: React.FC = observer(() => {
                                 >
                                   <div className="flex items-center gap-2 text-custom-text-200">
                                     <LayersIcon className="h-3.5 w-3.5" />
-                                    Create new work item
+                                    Criar nova issue
                                   </div>
                                   <kbd>C</kbd>
                                 </Command.Item>
@@ -387,7 +387,7 @@ export const CommandModal: React.FC = observer(() => {
                             <Command.Group heading="Workspace Settings">
                               <Command.Item
                                 onSelect={() => {
-                                  setPlaceholder("Search workspace settings...");
+                                  setPlaceholder("Pesquisar configurações do workspace...");
                                   setSearchTerm("");
                                   setPages([...pages, "settings"]);
                                 }}
@@ -395,7 +395,7 @@ export const CommandModal: React.FC = observer(() => {
                               >
                                 <div className="flex items-center gap-2 text-custom-text-200">
                                   <Settings className="h-3.5 w-3.5" />
-                                  Search settings...
+                                  Pesquisar configurações...
                                 </div>
                               </Command.Item>
                             </Command.Group>
@@ -404,12 +404,12 @@ export const CommandModal: React.FC = observer(() => {
                             <Command.Item onSelect={createNewWorkspace} className="focus:outline-none">
                               <div className="flex items-center gap-2 text-custom-text-200">
                                 <FolderPlus className="h-3.5 w-3.5" />
-                                Create new workspace
+                                Criar novo workspace
                               </div>
                             </Command.Item>
                             <Command.Item
                               onSelect={() => {
-                                setPlaceholder("Change interface theme...");
+                                setPlaceholder("Alterar tema da interface...");
                                 setSearchTerm("");
                                 setPages([...pages, "change-interface-theme"]);
                               }}
@@ -417,7 +417,7 @@ export const CommandModal: React.FC = observer(() => {
                             >
                               <div className="flex items-center gap-2 text-custom-text-200">
                                 <Settings className="h-3.5 w-3.5" />
-                                Change interface theme...
+                                Alterar tema da interface...
                               </div>
                             </Command.Item>
                           </Command.Group>
@@ -458,7 +458,7 @@ export const CommandModal: React.FC = observer(() => {
                 {/* Bottom overlay */}
                 <div className="w-full flex items-center justify-between px-4 py-2 border-t border-custom-border-200 bg-custom-background-90/80 rounded-b-lg">
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-custom-text-300">Actions</span>
+                    <span className="text-xs text-custom-text-300">Ações</span>
                     <div className="flex items-center gap-1">
                       <div className="grid h-6 min-w-[1.5rem] place-items-center rounded bg-custom-background-80 border-[0.5px] border-custom-border-200 px-1.5 text-[10px] text-custom-text-200">
                         {platform === "MacOS" ? <CommandIcon className="h-2.5 w-2.5 text-custom-text-200" /> : "Ctrl"}
@@ -469,7 +469,7 @@ export const CommandModal: React.FC = observer(() => {
                     </div>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-custom-text-300">Workspace Level</span>
+                    <span className="text-xs text-custom-text-300">Nível do workspace</span>
                     <ToggleSwitch
                       value={isWorkspaceLevel}
                       onChange={() => setIsWorkspaceLevel((prevData) => !prevData)}

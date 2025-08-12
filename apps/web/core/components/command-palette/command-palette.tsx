@@ -80,13 +80,13 @@ export const CommandPalette: FC = observer(() => {
       .then(() => {
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Copied to clipboard",
+          title: "Link da issue copiado para a área de transferência.",
         });
       })
       .catch(() => {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Some error occurred",
+          title: "Ocorreu um erro ao copiar o link da issue.",
         });
       });
   }, [workItem]);
@@ -97,7 +97,7 @@ export const CommandPalette: FC = observer(() => {
       if (!canPerformProjectMemberActions && showToast)
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "You don't have permission to perform this action.",
+          title: "Você não tem permissão para realizar esta ação.",
         });
 
       return canPerformProjectMemberActions;
@@ -110,7 +110,7 @@ export const CommandPalette: FC = observer(() => {
       if (!canPerformProjectAdminActions && projectId && showToast)
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "You don't have permission to perform this action.",
+          title: "Você não tem permissão para realizar esta ação.",
         });
 
       return canPerformProjectAdminActions;
@@ -123,7 +123,7 @@ export const CommandPalette: FC = observer(() => {
       if (!canPerformWorkspaceMemberActions && showToast)
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "You don't have permission to perform this action.",
+          title: "Você não tem permissão para realizar esta ação.",
         });
       return canPerformWorkspaceMemberActions;
     },
@@ -135,7 +135,7 @@ export const CommandPalette: FC = observer(() => {
       if (!canPerformAnyCreateAction && showToast)
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "You don't have permission to perform this action.",
+          title: "Você não tem permissão para realizar esta ação.",
         });
       return canPerformAnyCreateAction;
     },
