@@ -23,7 +23,7 @@ export default async function IssuesPage(props: Props) {
   try {
     response = await publishService.retrieveSettingsByProjectId(workspaceSlug, projectId);
   } catch (error) {
-    console.error("Error fetching project publish settings:", error);
+    console.error("Erro ao buscar configurações de publicação do projeto:", error);
     notFound();
   }
 

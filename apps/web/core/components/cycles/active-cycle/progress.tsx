@@ -95,7 +95,7 @@ export const ActiveCycleProgress: FC<ActiveCycleProgressProps> = observer((props
             <span className="flex items-center gap-2 text-sm text-custom-text-300">
               <span>
                 {`${cycle.cancelled_issues} cancelled ${
-                  cycle.cancelled_issues > 1 ? "work items are" : "work item is"
+                  cycle.cancelled_issues > 1 ? "Trabalhos são" : "Trabalho é"
                 } excluded from this report.`}{" "}
               </span>
             </span>

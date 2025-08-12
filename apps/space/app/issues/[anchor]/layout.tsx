@@ -11,8 +11,8 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { anchor } = params;
-  const DEFAULT_TITLE = "Plane";
-  const DEFAULT_DESCRIPTION = "Made with Plane, an AI-powered work management platform with publishing capabilities.";
+  const DEFAULT_TITLE = "NWERP";
+  const DEFAULT_DESCRIPTION = "Feito com NWERP, uma plataforma de gerenciamento de trabalhos com capacidades de publicação.";
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/public/anchor/${anchor}/meta/`);
     const data = await response.json();

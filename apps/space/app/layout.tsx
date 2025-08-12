@@ -7,17 +7,17 @@ import "@/styles/globals.css";
 import { AppProvider } from "./provider";
 
 export const metadata: Metadata = {
-  title: "Plane Publish | Make your Plane boards public with one-click",
-  description: "Plane Publish is a customer feedback management tool built on top of plane.so",
+  title: "NWERP | Feito com NWERP, uma plataforma de gerenciamento de trabalhos com capacidades de publicação.",
+  description: "Feito com NWERP, uma plataforma de gerenciamento de trabalhos com capacidades de publicação.",
   openGraph: {
-    title: "Plane Publish | Make your Plane boards public with one-click",
-    description: "Plane Publish is a customer feedback management tool built on top of plane.so",
-    url: "https://sites.plane.so/",
+    title: "NWERP | Feito com NWERP, uma plataforma de gerenciamento de trabalhos com capacidades de publicação.",
+    description: "Feito com NWERP, uma plataforma de gerenciamento de trabalhos com capacidades de publicação.",
+    url: "https://app.nwerp.ai/",
   },
   keywords:
-    "software development, customer feedback, software, accelerate, code management, release management, project management, work item tracking, agile, scrum, kanban, collaboration",
+    "Software development, customer feedback, software, accelerate, code management, release management, project management, work item tracking, agile, scrum, kanban, collaboration, nwerp, nwerp.ai",
   twitter: {
-    site: "@planepowers",
+    site: "@nwerp.ai",
   },
 };
 

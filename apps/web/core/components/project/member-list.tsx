@@ -60,7 +60,7 @@ export const ProjectMemberList: React.FC<TProjectMemberListProps> = observer((pr
           <Search className="h-3.5 w-3.5" />
           <input
             className="w-full max-w-[234px] border-none bg-transparent text-sm focus:outline-none placeholder:text-custom-text-400"
-            placeholder="Search"
+            placeholder="Pesquisar"
             value={searchQuery}
             autoFocus
             onChange={(e) => setSearchQuery(e.target.value)}

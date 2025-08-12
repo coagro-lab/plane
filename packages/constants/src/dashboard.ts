@@ -17,27 +17,27 @@ export const DURATION_FILTER_OPTIONS: {
 }[] = [
   {
     key: EDurationFilters.NONE,
-    label: "All time",
+    label: "Todo o tempo",
   },
   {
     key: EDurationFilters.TODAY,
-    label: "Due today",
+    label: "Vencido hoje",
   },
   {
     key: EDurationFilters.THIS_WEEK,
-    label: "Due this week",
+    label: "Vencido esta semana",
   },
   {
     key: EDurationFilters.THIS_MONTH,
-    label: "Due this month",
+    label: "Vencido este mês",
   },
   {
     key: EDurationFilters.THIS_YEAR,
-    label: "Due this year",
+    label: "Vencido este ano",
   },
   {
     key: EDurationFilters.CUSTOM,
-    label: "Custom",
+    label: "Personalizado",
   },
 ];
 
@@ -60,15 +60,15 @@ export const FILTERED_ISSUES_TABS_LIST: {
 }[] = [
   {
     key: "upcoming",
-    label: "Upcoming",
+    label: "Próximos",
   },
   {
     key: "overdue",
-    label: "Overdue",
+    label: "Vencido",
   },
   {
     key: "completed",
-    label: "Marked completed",
+    label: "Concluído",
   },
 ];
 
@@ -79,11 +79,11 @@ export const UNFILTERED_ISSUES_TABS_LIST: {
 }[] = [
   {
     key: "pending",
-    label: "Pending",
+    label: "Pendente",
   },
   {
     key: "completed",
-    label: "Marked completed",
+    label: "Concluído",
   },
 ];
 

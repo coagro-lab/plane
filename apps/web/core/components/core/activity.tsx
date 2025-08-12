@@ -105,20 +105,20 @@ const LabelPill = observer(({ labelId, workspaceSlug }: { labelId: string; works
 
 const inboxActivityMessage = {
   declined: {
-    showIssue: "declined work item",
-    noIssue: "declined this work item from intake.",
+    showIssue: "declinou este trabalho",
+    noIssue: "declinou este trabalho.",
   },
   snoozed: {
-    showIssue: "snoozed work item",
-    noIssue: "snoozed this work item.",
+    showIssue: "snoozou este trabalho",
+    noIssue: "snoozou este trabalho.",
   },
   accepted: {
-    showIssue: "accepted work item",
-    noIssue: "accepted this work item from intake.",
+    showIssue: "aceitou este trabalho",
+    noIssue: "aceitou este trabalho.",
   },
   markedDuplicate: {
-    showIssue: "declined work item",
-    noIssue: "declined this work item from intake by marking a duplicate work item.",
+    showIssue: "declinou este trabalho",
+    noIssue: "declinou este trabalho como duplicado.",
   },
 };
 
@@ -133,7 +133,7 @@ const getInboxUserActivityMessage = (activity: IIssueActivity, showIssue: boolea
     case "2":
       return showIssue ? inboxActivityMessage.markedDuplicate.showIssue : inboxActivityMessage.markedDuplicate.noIssue;
     default:
-      return "updated intake work item status.";
+      return "atualizou o status do trabalho na entrada.";
   }
 };
 

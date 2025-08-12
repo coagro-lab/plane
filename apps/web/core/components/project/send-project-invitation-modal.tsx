@@ -82,9 +82,9 @@ export const SendProjectInvitationModal: React.FC<Props> = observer((props) => {
         if (onSuccess) onSuccess();
         onClose();
         setToast({
-          title: "Success!",
+          title: "Sucesso!",
           type: TOAST_TYPE.SUCCESS,
-          message: "Members added successfully.",
+          message: "Membros adicionados com sucesso.",
         });
 
         captureSuccess({

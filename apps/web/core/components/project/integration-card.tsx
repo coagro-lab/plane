@@ -24,11 +24,11 @@ type Props = {
 const integrationDetails: { [key: string]: any } = {
   github: {
     logo: GithubLogo,
-    description: "Select GitHub repository to enable sync.",
+    description: "Selecione o repositório do GitHub para habilitar a sincronização.",
   },
   slack: {
     logo: SlackLogo,
-    description: "Get regular updates and control which notification you want to receive.",
+    description: "Obtenha atualizações regulares e controle quais notificações você deseja receber.",
   },
 };
 
@@ -68,16 +68,16 @@ export const IntegrationCard: React.FC<Props> = ({ integration }) => {
 
         setToast({
           type: TOAST_TYPE.SUCCESS,
-          title: "Success!",
-          message: `${login}/${name} repository synced with the project successfully.`,
+          title: "Sucesso!",
+          message: `${login}/${name} sincronizado com o projeto com sucesso.`,
         });
       })
       .catch((err) => {
         console.error(err);
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Repository could not be synced with the project. Please try again.",
+          title: "Erro!",
+          message: "O repositório não pôde ser sincronizado com o projeto. Por favor, tente novamente.",
         });
       });
   };

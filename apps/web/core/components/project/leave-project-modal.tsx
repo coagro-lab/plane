@@ -81,29 +81,29 @@ export const LeaveProjectModal: FC<ILeaveProjectModal> = observer((props) => {
               });
               setToast({
                 type: TOAST_TYPE.ERROR,
-                title: "Error!",
-                message: "Something went wrong please try again later.",
+                title: "Erro!",
+                message: "Algo deu errado. Por favor, tente novamente mais tarde.",
               });
             });
         } else {
           setToast({
             type: TOAST_TYPE.ERROR,
-            title: "Error!",
-            message: "Please confirm leaving the project by typing the 'Leave Project'.",
+            title: "Erro!",
+            message: "Por favor, confirme a saída do projeto digitando 'Sair do Projeto'.",
           });
         }
       } else {
         setToast({
           type: TOAST_TYPE.ERROR,
-          title: "Error!",
-          message: "Please enter the project name as shown in the description.",
+          title: "Erro!",
+          message: "Por favor, insira o nome do projeto conforme mostrado na descrição.",
         });
       }
     } else {
       setToast({
         type: TOAST_TYPE.ERROR,
-        title: "Error!",
-        message: "Please fill all fields.",
+        title: "Erro!",
+        message: "Por favor, preencha todos os campos.",
       });
     }
   };
@@ -147,16 +147,16 @@ export const LeaveProjectModal: FC<ILeaveProjectModal> = observer((props) => {
 
                   <span>
                     <p className="text-sm leading-7 text-custom-text-200">
-                      Are you sure you want to leave the project -
-                      <span className="font-medium text-custom-text-100">{` "${project?.name}" `}</span>? All of the
-                      work items associated with you will become inaccessible.
+                      Você tem certeza que deseja sair do projeto -
+                      <span className="font-medium text-custom-text-100">{` "${project?.name}" `}</span>? Todos os
+                      trabalhos associados a você se tornarão inacessíveis.
                     </p>
                   </span>
 
                   <div className="text-custom-text-200">
                     <p className="break-words text-sm ">
-                      Enter the project name <span className="font-medium text-custom-text-100">{project?.name}</span>{" "}
-                      to continue:
+                      Insira o nome do projeto <span className="font-medium text-custom-text-100">{project?.name}</span>{" "}
+                      para continuar:
                     </p>
                     <Controller
                       control={control}
@@ -182,7 +182,8 @@ export const LeaveProjectModal: FC<ILeaveProjectModal> = observer((props) => {
 
                   <div className="text-custom-text-200">
                     <p className="text-sm">
-                      To confirm, type <span className="font-medium text-custom-text-100">Leave Project</span> below:
+                      Para confirmar, digite <span className="font-medium text-custom-text-100">Sair do Projeto</span>
+                      abaixo:
                     </p>
                     <Controller
                       control={control}
