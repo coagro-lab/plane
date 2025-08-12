@@ -11,7 +11,7 @@ export interface AuthForgotPasswordProps {
 export const AuthForgotPassword: React.FC<AuthForgotPasswordProps> = ({
   onForgotPassword,
   className = "",
-  text = "Forgot your password?",
+  text = "Esqueceu sua senha?",
   disabled = false,
 }) => {
   const handleClick = (e: React.MouseEvent) => {

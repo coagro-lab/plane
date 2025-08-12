@@ -127,9 +127,10 @@ export const WORKSPACE_SETTINGS_LINKS: {
 ];
 
 export const ROLE = {
-  [EUserWorkspaceRoles.GUEST]: "Guest",
-  [EUserWorkspaceRoles.MEMBER]: "Member",
-  [EUserWorkspaceRoles.ADMIN]: "Admin",
+  [EUserWorkspaceRoles.GUEST]: "Visitante",
+  [EUserWorkspaceRoles.MEMBER]: "Membro",
+  [EUserWorkspaceRoles.MANAGER]: "Gerente",
+  [EUserWorkspaceRoles.ADMIN]: "Administrador",
 };
 
 export const ROLE_DETAILS = {
@@ -330,9 +331,9 @@ export const WORKSPACE_DEFAULT_SEARCH_RESULT: IWorkspaceSearchResults = {
 };
 
 export const USE_CASES = [
-  "Plan and track product roadmaps",
-  "Manage engineering sprints",
-  "Coordinate cross-functional projects",
-  "Replace our current tool",
-  "Just exploring",
+  "Planejar e rastrear mapas de produto",
+  "Gerenciar sprints de engenharia",
+  "Coordenar projetos multifuncionais",
+  "Substituir nossa ferramenta atual",
+  "Apenas explorando",
 ];

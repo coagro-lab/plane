@@ -1,42 +1,42 @@
 export const ENTERPRISE_PLAN_FEATURES = [
-  "Private + managed deployments",
-  "GAC",
-  "LDAP support",
-  "Databases + Formulas",
-  "Unlimited and full Automation Flows",
-  "Full-suite professional services",
+  "Implantações privadas + gerenciadas",
+  "Gestão de acesso e controle",
+  "Suporte LDAP",
+  "Bancos de dados + Fórmulas",
+  "Automatização de fluxos ilimitados e completos",
+  "Serviços profissionais completos",
 ];
 
 export const BUSINESS_PLAN_FEATURES = [
-  "Project Templates",
-  "Workflows + Approvals",
-  "Decision + Loops Automation",
-  "Custom Reports",
-  "Nested Pages",
-  "Intake Forms",
+  "Modelos de projeto",
+  "Fluxos + Aprovações",
+  "Automatização de decisões + loops",
+  "Relatórios personalizados",
+  "Páginas aninhadas",
+  "Formulários de entrada",
 ];
 
 export const PRO_PLAN_FEATURES = [
-  "Dashboards + Reports",
-  "Full Time Tracking + Bulk Ops",
-  "Teamspaces",
-  "Trigger And Action",
+  "Dashboards + Relatórios",
+  "Rastreamento de tempo completo + Operações em massa",
+  "Espaços de equipe",
+  "Trigger e Ação",
   "Wikis",
-  "Popular integrations",
+  "Integrações populares",
 ];
 
 export const ONE_PLAN_FEATURES = [
-  "OIDC + SAML for SSO",
-  "Active Cycles",
-  "Real-time collab + public views and page",
-  "Link pages in issues and vice-versa",
-  "Time-tracking + limited bulk ops",
-  "Docker, Kubernetes and more",
+  "OIDC + SAML para SSO",
+  "Ciclos ativos",
+  "Colaboração em tempo real + visualizações públicas e páginas",
+  "Linkar páginas em problemas e vice-versa",
+  "Rastreamento de tempo + operações em massa limitadas",
+  "Docker, Kubernetes e mais",
 ];
 
 export const FREE_PLAN_UPGRADE_FEATURES = [
-  "OIDC + SAML for SSO",
-  "Time Tracking and Bulk Ops",
-  "Integrations",
-  "Public Views and Pages",
+  "OIDC + SAML para SSO",
+  "Rastreamento de tempo e operações em massa",
+  "Integrações",
+  "Visualizações públicas e páginas",
 ];

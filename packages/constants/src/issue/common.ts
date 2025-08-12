@@ -64,23 +64,23 @@ export const ISSUE_PRIORITIES: {
 }[] = [
   {
     key: "urgent",
-    title: "Urgent",
+    title: "Urgente",
   },
   {
     key: "high",
-    title: "High",
+    title: "Alta",
   },
   {
     key: "medium",
-    title: "Medium",
+    title: "Média",
   },
   {
     key: "low",
-    title: "Low",
+    title: "Baixa",
   },
   {
     key: "none",
-    title: "None",
+    title: "Nenhuma",
   },
 ];
 

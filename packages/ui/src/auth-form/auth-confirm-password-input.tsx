@@ -17,7 +17,7 @@ export interface AuthConfirmPasswordInputProps
 
 export const AuthConfirmPasswordInput: React.FC<AuthConfirmPasswordInputProps> = ({
   password,
-  label = "Confirm Password",
+  label = "Confirmar senha",
   error,
   showPasswordToggle = true,
   containerClassName = "",
@@ -51,7 +51,7 @@ export const AuthConfirmPasswordInput: React.FC<AuthConfirmPasswordInputProps> =
 
   const getError = () => {
     if (error) return error;
-    if (showMatchError) return "Passwords don't match";
+    if (showMatchError) return "As senhas não coincidem";
     return "";
   };
 

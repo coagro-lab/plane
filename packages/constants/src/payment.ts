@@ -29,7 +29,7 @@ export const PLANE_COMMUNITY_PRODUCTS: Record<string, IPaymentProduct> = {
     id: EProductSubscriptionEnum.PRO,
     name: "Plane Pro",
     description:
-      "More views, more cycles powers, more pages features, new reports, and better dashboards are waiting to be unlocked.",
+      "Mais visualizações, mais ciclos de poder, mais recursos de páginas, novos relatórios e melhores dashboards estão esperando para serem desbloqueados.",
     type: "PRO",
     prices: [
       {
@@ -56,7 +56,7 @@ export const PLANE_COMMUNITY_PRODUCTS: Record<string, IPaymentProduct> = {
     id: EProductSubscriptionEnum.BUSINESS,
     name: "Plane Business",
     description:
-      "The earliest packaging of Business at $10 a seat a month billed annually, $12 a seat a month billed monthly for Plane Cloud",
+      "O primeiro pacote de negócios a $10 por assento por mês faturado anualmente, $12 por assento por mês faturado mensalmente para Plane Cloud",
     type: "BUSINESS",
     prices: [
       {
