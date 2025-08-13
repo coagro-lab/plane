@@ -129,7 +129,6 @@ export const WORKSPACE_SETTINGS_LINKS: {
 export const ROLE = {
   [EUserWorkspaceRoles.GUEST]: "Visitante",
   [EUserWorkspaceRoles.MEMBER]: "Membro",
-  [EUserWorkspaceRoles.MANAGER]: "Gerente",
   [EUserWorkspaceRoles.ADMIN]: "Administrador",
 };
 

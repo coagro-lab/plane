@@ -125,138 +125,16 @@ x-live-env: &live-env
 
 services:
  
-  api:
-    container_name: api
+  space:
+    container_name: space
     build:
-      context: ./apps/api
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
-    command: ./bin/docker-entrypoint-api.sh
-    environment:
-      <<: [*plane, *app-env, *pg-env, *redis-env, *rabbitmq-env, *docstore-env]
-    networks:
-      - dokploy-network
-    deploy:
-      replicas: ${API_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - api_logs:/code/plane/logs
-    depends_on:
-      - plane-redis
-
-  worker:
-    container_name: bgworker
-    build:
-      context: ./apps/api
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
-    command: ./bin/docker-entrypoint-worker.sh
-    environment:
-      <<: [*plane, *app-env, *pg-env, *redis-env, *rabbitmq-env, *docstore-env]
-    networks:
-      - dokploy-network
-    deploy:
-      replicas: ${WORKER_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - worker_logs:/code/plane/logs
-    depends_on:
-      - api
-      - plane-redis
-
-  beat-worker:
-    container_name: beatworker
-    build:
-      context: ./apps/api
-      dockerfile: Dockerfile.api
+      context: .
+      dockerfile: ./apps/space/Dockerfile.space
       args:
         DOCKER_BUILDKIT: 1
     restart: always
-    command: ./bin/docker-entrypoint-beat.sh
-    environment:
-      <<: [*plane, *app-env, *pg-env, *redis-env, *rabbitmq-env, *docstore-env]
     networks:
       - dokploy-network
-    deploy:
-      replicas: ${BEAT_WORKER_REPLICAS:-1}
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - beat_worker_logs:/code/plane/logs
-    depends_on:
-      - api
-      - plane-redis
-
-  migrator:
-    container_name: plane-migrator
-    build:
-      context: ./apps/api
-      dockerfile: Dockerfile.api
-      args:
-        DOCKER_BUILDKIT: 1
-    command: ./bin/docker-entrypoint-migrator.sh
-    environment:
-      <<: [*plane, *app-env, *pg-env, *redis-env, *rabbitmq-env, *docstore-env]
-    networks:
-      - dokploy-network
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - migrator_logs:/code/plane/logs
-    depends_on:
-      - plane-redis
-
- 
-  plane-db:
-    container_name: plane-db
-    image: postgres:15.7-alpine
-    command: postgres -c 'max_connections=1000'
-    networks:
-      - dokploy-network
-    environment:
-      <<: *pg-env
-    ports:
-      - "5499:5432"
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-
-  plane-redis:
-    container_name: plane-redis
-    image: valkey/valkey:7.2.5-alpine
-    environment:
-      <<: *redis-env
-    networks:
-      - dokploy-network
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-    volumes:
-      - redisdata:/data
-
-  plane-minio:
-    container_name: plane-minio
-    image: minio/minio
-    restart: always
-    command: server /export --console-address ":9090"
-    networks:
-      - dokploy-network
-    volumes:
-      - uploads:/export
-    environment:
-      MINIO_ROOT_USER: ${AWS_ACCESS_KEY_ID}
-      MINIO_ROOT_PASSWORD: ${AWS_SECRET_ACCESS_KEY}
-
 
 
 volumes:
