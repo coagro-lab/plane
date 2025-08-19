@@ -6,7 +6,8 @@ import logging
 from celery import Celery
 from pythonjsonlogger.jsonlogger import JsonFormatter
 from celery.signals import after_setup_logger, after_setup_task_logger
-from celery.schedules import crontab
+from celery.schedules import crontab, schedule
+from datetime import timedelta
 
 # Module imports
 from plane.settings.redis import redis_instance
