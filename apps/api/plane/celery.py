@@ -6,8 +6,7 @@ import logging
 from celery import Celery
 from pythonjsonlogger.jsonlogger import JsonFormatter
 from celery.signals import after_setup_logger, after_setup_task_logger
-from celery.schedules import crontab, schedule
-from datetime import timedelta
+from celery.schedules import crontab
 
 # Module imports
 from plane.settings.redis import redis_instance
@@ -57,8 +56,6 @@ app.conf.beat_schedule = {
 }
 
 
-
-
 # Setup logging
 @after_setup_logger.connect
 def setup_loggers(logger, *args, **kwargs):
@@ -78,11 +75,6 @@ def setup_task_loggers(logger, *args, **kwargs):
     handler = logging.StreamHandler()
     handler.setFormatter(fmt=formatter)
     logger.addHandler(handler)
-
-
-
-
-
 
 
 # Load task modules from all registered Django app configs.

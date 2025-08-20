@@ -10,42 +10,13 @@ from drf_spectacular.views import (
 
 handler404 = "plane.app.views.error_404.custom_404_view"
 
-# Module imports
-from plane.ee.views.space.intake import (
-    IntakeEmailWebhookEndpoint,
-    IntakeEmailAttachmentEndpoint,
-)
-
 urlpatterns = [
     path("api/", include("plane.app.urls")),
     path("api/public/", include("plane.space.urls")),
     path("api/instances/", include("plane.license.urls")),
     path("api/v1/", include("plane.api.urls")),
     path("auth/", include("plane.authentication.urls")),
-    path("api/payments/", include("plane.payment.urls")),
     path("", include("plane.web.urls")),
-    path("graphql/", include("plane.graphql.urls")),
-    path("auth/o/", include(("plane.authentication.oauth_urls", "oauth2_provider"))),
-    # this is a webhook endpoint for email intake - this endpoint should not be exposed to ingress
-    path("intake/email/", IntakeEmailWebhookEndpoint.as_view()),
-    path("intake/email/attachments/", IntakeEmailAttachmentEndpoint.as_view()),
-    path("marketplace/", include("plane.marketplace.urls")),
-
-
-#     path("api/", include("plane.app.urls")),
-#     path("api/public/", include("plane.space.urls")),
-#     path("api/instances/", include("plane.license.urls")),
-#     path("api/v1/", include("plane.api.urls")),
-#     path("auth/", include("plane.authentication.urls")),
-#     path("api/payments/", include("plane.payment.urls")),
-#     path("", include("plane.web.urls")),
-#     path("graphql/", include("plane.graphql.urls")),
-#     path("auth/o/", include(("plane.authentication.oauth_urls", "oauth2_provider"))),
-#     # this is a webhook endpoint for email intake - this endpoint should not be exposed to ingress
-#     path("intake/email/", IntakeEmailWebhookEndpoint.as_view()),
-#     path("intake/email/attachments/", IntakeEmailAttachmentEndpoint.as_view()),
-#     path("marketplace/", include("plane.marketplace.urls")),
-# ]
 ]
 
 if settings.ENABLE_DRF_SPECTACULAR:
